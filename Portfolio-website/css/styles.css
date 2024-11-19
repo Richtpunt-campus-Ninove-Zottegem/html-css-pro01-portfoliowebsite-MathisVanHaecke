@@ -1,0 +1,85 @@
+/* Algemene stylinh */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: ProximaNova,Arial,Sans-serif;
+    margin: 0px;
+    padding: 50px;
+  }
+  header {
+    background-color: grey;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+  }
+  .Container {
+    width: calc(100% - 40px);
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    border: 2px solid red;
+  }
+  .HeaderLogo {
+    width: 80px;
+    border: 2px solid green;
+    display: inline-block;
+    height: 100%;
+  }
+  .HeaderMenu {
+    width: calc(100% - 80px);
+    border: 2px solid purple;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    text-align: right;
+  }
+  .HeaderLogo { 
+    width: 60px;
+    margin: 10px;
+  }
+  .HeaderMenu a {
+    text-decoration: none;
+    color: white;
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-right: 20px;
+  }
+  h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+  }
+  .BigBox1, .BigBox2, .BigBox3 {
+    background-color: #ff6f6e;
+    border: 2px solid white;
+    width: 33%;
+    padding: 20px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .InnerBigBox1, .InnerBigBox2, .InnerBigBox3 {
+    background-color: #ff926e;
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+  .ExtraSmallBox, .ExtraBigBox {
+    width: 99.6%;
+    border: 2px solid white;
+    background-color: #f28c8c;
+    height: 100px;
+    padding: 20px;
+    margin-top: 2px;
+  }
+  .ExtraBigBox {
+    background-color: #e6a9a9;
+    height: 1000px;
+  }
+  
