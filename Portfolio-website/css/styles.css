@@ -1,0 +1,355 @@
+/* Basis reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff9434;
+}
+
+/* Header styling */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Nodig voor het positioneren van het dropdownmenu */
+}
+
+/* Horizontale navigatie */
+nav ul {
+  list-style-type: none;
+  display: flex; /* Horizontale lay-out */
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #007BFF; /* Kleur verandert bij hover */
+  text-decoration: underline; /* Onderstreept bij hover */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.Logo img {
+  font-size: 16px;
+  position: absolute;
+  top: 15px; /* Afstand vanaf de bovenkant */
+  left: 15px; /* Afstand vanaf de rechterkant */
+  bottom: 0px;
+  width: auto;
+  height: 97px;
+}
+
+/* Algemene styling voor header en nav */
+header {
+  position: relative;
+}
+
+nav {
+  position: relative;
+}
+
+/* Positioneer het menu-icoon rechtsboven */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; /* Afstand vanaf de bovenkant */
+  right: 10px; /* Afstand vanaf de rechterkant */
+}
+
+/* Verberg de checkbox voor het menu */
+.menu-checkbox {
+  display: none;
+}
+
+/* Dropdown menu styling */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px; /* Zelfde padding als je section */
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #fff; /* Witte achtergrond, zelfde als in de section */
+  border-radius: 8px; /* Ronde hoeken, zoals in je section */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Schaduw, net als je section */
+  width: 200px;
+  z-index: 1000;
+}
+
+/* Menu items styling */
+.menu li {
+  padding: 10px;
+  color: #333; /* Tekstkleur is donkergrijs, zoals in de section */
+}
+
+/* Menu items hover styling */
+.menu li:hover {
+  background-color: #f0f0f0; /* Lichte hoverkleur */
+}
+
+/* Wanneer het menu zichtbaar is */
+.menu-checkbox:checked ~ .menu {
+  display: block;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit; /* Zorgt ervoor dat de tekstkleur hetzelfde is als de menu-itemkleur */
+}
+
+/* Optioneel: Geef een hover-effect op de links */
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Styling voor secties */
+section {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Formulier styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Ruimte tussen velden */
+  margin-top: 10px;
+}
+
+/* Velden styling */
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical; /* Laat gebruikers de hoogte aanpassen */
+}
+
+textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* Vaardigheden en Hulpmiddelen layout */
+.skills-tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skills-list, .tools-list {
+  flex: 1 1 45%;
+}
+
+.skills-list h3, .tools-list h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.skills-list ul, .tools-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list ul li, .tools-list ul li {
+  margin-bottom: 15px;
+}
+
+.skills-list ul li span, .tools-list ul li span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Voortgangsbalk */
+.skills-list ul li .progress, .tools-list ul li .progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #d8dbe2;
+}
+
+.skills-list ul li .progress .percentage, .tools-list ul li .progress .percentage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #008080;
+  transition: all 0.3s ease;
+}
+
+/* Projectgalerij styling */
+.project-gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project-item {
+  background-color: #eaeaea;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #008080;
+}
+
+/* Footer styling (voor de sociale media icoontjes en tekst) */
+/* Algemene styling */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+footer table {
+  margin: 0 auto;
+}
+
+footer td {
+  font-size: 20px;
+  text-align: left;
+  transition: color 0.3s ease, transform 0.3s ease; /* Zachte overgang voor hover effect */
+}
+
+footer td i {
+  margin-right: 8px; /* Ruimte tussen icoon en tekst */
+}
+
+footer td:hover {
+  transform: scale(1.1); /* Vergroot de knop bij hover */
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease; /* Overgang voor tekstkleur */
+}
+
+/* Specifieke kleuren per platform */
+footer .instagram:hover td, 
+footer .instagram:hover a {
+  color: #E1306C; /* Instagram roze/blauw */
+}
+
+footer .playstation:hover td, 
+footer .playstation:hover a {
+  color: #0070D1; /* PlayStation blauw */
+}
+
+footer .youtube:hover td, 
+footer .youtube:hover a {
+  color: #FF0000; /* YouTube rood */
+}
+
+/* Footer tekst */
+footer p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Algemene knop styling */
+form button, button, .show-more-btn {
+  background-color: #333; /* Donkergrijze achtergrond */
+  color: white; /* Witte tekst */
+  padding: 10px 20px;
+  text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Zachte overgang voor kleur en zoom effect */
+  font-size: 14px; /* Kleine tekst */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Hover effect voor knoppen */
+button:hover, .show-more-btn:hover {
+  background-color: #007BFF; /* Blauwe achtergrondkleur bij hover */
+  transform: scale(1.1); /* Vergroot de knop bij hover */
+}
+form button:hover {
+  background-color: #007BFF; /* Blauwe achtergrondkleur bij hover */
+  transform: none;
+}
+/* Specifieke styling voor de "Toon meer" link */
+.show-more-btn {
+  display: inline-block; /* Gedraagt zich als een blok, maar blijft inline */
+  text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+  margin-top: 10px; /* Ruimte boven de knop */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .skills-tools-container {
+      flex-direction: column;
+  }
+
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  section h2 {
+      font-size: 1.2rem;
+  }
+}

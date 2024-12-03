@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathis Van Haecke | Mijn Portfolio Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/522f792f07.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+
+    <!-- Header met navigatie -->
+    <header>
+        <div class="Logo">
+            <img src="Afbeeldingen/Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Over Mij</a></li>
+                <li><a href="#skills-tools">Vaardigheden & Hulpmiddelen</a></li>
+                <li><a href="#projects">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul id="menu" class="menu">
+            <li><a href="#about">Over Mij</a></li>
+            <li><a href="#skills-tools">Vaardigheden & Hulpmiddelen</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+        <h1>Welkom op mijn Portfoliowebsite</h1>
+    </header>
+    
+
+    <!-- Over Mij Sectie -->
+    <section id="about">
+        <h2>Over Mij</h2>
+        <p>Hallo, ik ben Mathis, ik ben 16 jaar oud. Mijn hobby's zijn gamen, fietsen en rijden met mijn brommer. Ook maak ik graag websites in mijn vrije tijd.</p>
+    </section>
+
+    <!-- Vaardigheden en Hulpmiddelen Sectie -->
+    <section id="skills-tools">
+        <h2>Vaardigheden en Hulpmiddelen</h2>
+        <div class="skills-tools-container">
+            <!-- Vaardigheden Kolom -->
+            <div class="skills-list">
+                <h3>Vaardigheden</h3>
+                <ul>
+                    <li>
+                        <span>Webontwikkeling</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 30%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Responsive Design</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 40%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>UI/UX Design</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 5%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hulpmiddelen Kolom -->
+            <div class="tools-list">
+                <h3>Hulpmiddelen & Technologieën</h3>
+                <ul>
+                    <li>
+                        <span>HTML</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 15%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>CSS</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 10%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>JavaScript</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 5%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Python</span>
+                        <div class="progress">
+                            <div class="percentage" style="width: 5%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projecten Sectie -->
+    <section id="projects">
+        <h2>Projecten</h2>
+        <div class="project-gallery">
+            <div class="project-item">
+                <img src="Afbeeldingen/Project 1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Educatieve zonnevolger</p>
+                <a href="https://www.rtcoostvlaanderen.be/stem/2.-stem-projecten-23-24/educatieve-zonnevolger" class="show-more-btn" target="_blank">Toon meer</a>
+            </div>
+            <div class="project-item">
+                <img src="Afbeeldingen/Project 2.avif" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>ARDUINO Grijparm</p>
+                <a href="https://quartzcomponents.com/blogs/electronics-projects/how-to-build-robotic-arm-using-arduino" class="show-more-btn" target="_blank">Toon meer</a>
+            </div>
+            <div class="project-item">
+                <img src="Afbeeldingen/Project 3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>M&M Sorteerder</p>
+                <a href="https://willempennings.nl/mms-and-skittles-sorting-machine/" class="show-more-btn" target="_blank">Toon meer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Sectie -->
+    <section id="contact">
+        <h2>Neem Contact Met Mij Op</h2>
+        <p>Voel je vrij om contact op te nemen voor mogelijke projecten of gewoon om hallo te zeggen!</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Access Key -->
+            <input type="hidden" name="access_key" value="8fe2713a-7a77-4f3d-9962-7674f67773f3">
+    
+            <!-- Naam veld -->
+            <input type="text" name="name" placeholder="Jouw Naam" required>
+    
+            <!-- Email veld -->
+            <input type="email" name="email" placeholder="Jouw E-mailadres" required>
+    
+            <!-- Bericht veld -->
+            <textarea name="message" placeholder="Typ hier je bericht" required></textarea>
+    
+            <!-- Honeypot (onzichtbaar) -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+            <!-- Verzenden -->
+            <button type="submit">Verzenden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <table>
+            <tr class="instagram">
+                <td><i class="fa-brands fa-instagram"></i></td>
+                <td><a href="https://www.instagram.com/mathis_vanhaecke/" target="_blank">Instagram</a></td>
+            </tr>
+            <tr class="playstation">
+                <td><i class="fa-brands fa-playstation"></i></td>
+                <td><a href="https://profile.playstation.com/AMS_Mathis" target="_blank">PlayStation</a></td>
+            </tr>
+            <tr class="youtube">
+                <td><i class="fa-brands fa-youtube"></i></td>
+                <td><a href="https://www.youtube.com/@mathis7814" target="_blank">YouTube</a></td>
+            </tr>
+        </table>
+        <p>&copy; Mathis Van Haecke</p>
+    </footer>
+    
+    
+    
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
